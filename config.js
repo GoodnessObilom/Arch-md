@@ -8,7 +8,7 @@ const chalk = require("chalk")
 const fs = require("fs")
 
 //======= Change settings =======\\
-global.owner = ["2347036214381"]
+global.owner = ["2347061357640"]
 global.botname = ["Arch Md"]
 global.simbol = "♘"
 global.typeMenu = 'v5' //don't change 
