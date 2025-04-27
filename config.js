@@ -9,19 +9,19 @@ const fs = require("fs")
 require('dotenv').config(); 
 
 //================= { SETTINGS } =================\\
-global.prefix = process.env.PREFIX || "."; // your desired prefix symbol only
-global.owner = process.env.OWNER_NUMBER || "2347036214381"; // owner number 
-global.sudo = process.env.SUDO  || " ";
-global.ownername = process.env.OWNER_NAME || "Ednut"; //set bot owner name here 
-global.botname = process.env.BOT_NAME || "αrch md";
-global.author = process.env.AUTHOR  || "Ednut";
-global.packname = process.env.PACK_NAME  || "Arch Md ²⁵";
+global.prefix = process.env.PREFIX || "!"; // your desired prefix symbol only
+global.owner = process.env.OWNER_NUMBER || "2348022159244"; // owner number 
+global.sudo = process.env.SUDO  || "2349061909726";
+global.ownername = process.env.OWNER_NAME || "ᗰ😟ᖴᗴ 【𓍯】"; //set bot owner name here 
+global.botname = process.env.BOT_NAME || "αrch md🍀";
+global.author = process.env.AUTHOR  || "ᗰ😟ᖴᗴ 【𓍯】";
+global.packname = process.env.PACK_NAME  || "ᴀɴᴛɪsᴏᴄɪᴀʟ ʜᴜᴍɪᴅɪᴛʏ 🍀";
 global.thumb = process.env.THUMB_IMAGE || 'https://files.catbox.moe/1uhvld.jpg';
-global.footer = process.env.FOOTER || '🤖 © wa bot';
+global.footer = process.env.FOOTER || 'ᴀɴᴛɪsᴏᴄɪᴀʟ ʜᴜᴍɪᴅɪᴛʏ 🍀';
 global.onlypc = process.env.ONLYPC_MSG  || "Sorry buddy the bot won't work directly in group chat to reduce spam use in private chat";
 global.onlygc = process.env.ONLYGC_MSG  || "Sorry buddy the bot won't work directly in private chat to reduce spam use in group";
-global.session = process.env.SESSION_ID || "Arch_47e05948419187d2100d51d5ab415a37";
-global.simbol = process.env.SYMBOL || '♘';
+global.session = process.env.SESSION_ID || "";
+global.simbol = process.env.SYMBOL || '🍀';
 global.menutype = process.env.MENU_TYPE  || "v2";
 global.warn = process.env.WARN || "3";
 global.goodbye = process.env.GOODBYE === 'false';
