@@ -99,6 +99,11 @@ let archmenu = `┏━《 ${botname} 》━━━
 ┏━━《ɴᴇᴡ ᴍᴇɴᴜ》━━
 ┃${global.simbol} ${global.prefix}setcmd <text>
 ┃${global.simbol} ${global.prefix}delcmd <text>
+┃${global.simbol} ${global.prefix}update
+┃${global.simbol} ${global.prefix}update <now>
+┃${global.simbol} ${global.prefix}filter <text>
+┃${global.simbol} ${global.prefix}delfilter <text>
+┃${global.simbol} ${global.prefix}listfilter <text>
 ┗━━━━━━━━━━━━━━━━
 
 ┏━━《ɢᴀᴍᴇ ᴍᴇɴᴜ》━━
@@ -149,6 +154,8 @@ let archmenu = `┏━《 ${botname} 》━━━
 ┃${global.simbol} ${global.prefix}Stoptime
 ┃${global.simbol} ${global.prefix}Welcome
 ┃${global.simbol} ${global.prefix}Goodbye
+┃${global.simbol} ${global.prefix}setwelcome
+┃${global.simbol} ${global.prefix}setgoodbye
 ┃${global.simbol} ${global.prefix}pdm
 ┃${global.simbol} ${global.prefix}Request
 ┃${global.simbol} ${global.prefix}approve

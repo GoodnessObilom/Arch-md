@@ -1,20 +1,25 @@
-const { fork } = require('child_process');
-const chalk = require("chalk");
-let childProcess;
-function start() {
-    childProcess = fork('main.js');
-    childProcess.on('exit', (code) => {
-        console.log(chalk.yellow(chalk.bgRed(`Session Runner has Terminated with Code ${code}\nPlease Wait Restarting System`)))
-        start()
-    });
-    console.log(chalk.yellow(chalk.bgBlue(`Starting System`)))
-}
+const {fork} = require('child_process');
+const chalk = require('chalk')
 
-function restart() {
-    if (childProcess) {
-        childProcess.send('restart');
-    } 
-}
+async function start(){
+const child = fork('./main.js')
+//send msg to child
+//child.send("Hello Child")
 
-// Start the initial process
-start();
+//check child response to child
+child.on("message",msg=>{
+console.log('child to parent =>',msg)
+})
+
+child.on("close",(anu)=>{
+//console.log('terclose',anu)
+console.log(chalk.black(chalk.bgRed(`Arch Wa Ai is restarting..`)))
+start()
+})
+
+child.on("exit",(anu2)=>{
+//console.log('terexit',anu2)
+})
+
+}
+start()
